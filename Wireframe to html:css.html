@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/6e7fcbf2ad.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/style1.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-app">
+        <div class="row justify-content-center">
+          <form class="col mb-3" id="searchCity">
+            <input
+              type="text"
+              class="form-text"
+              id="exampleInputText1"
+              placeholder="Enter City"
+            />
+            <button type="submit" class="btn btn-primary">Submit</button>
+
+            <button type="submit" class="btn btn-primary" id="currentButton">
+              Current
+            </button>
+          </form>
+        </div>
+        <!-- Justify content center- centers everything inside the row -->
+        <div class="row justify-content-center">
+          <!-- This is the start of the current weather information -->
+          <div class="col align-self-center">
+            <h1 id="city">London</h1>
+            <h2 id="currentDay">Friday</h2>
+            <h3 id="currentTime">Time</h3>
+
+            <span id="temperature">17</span>
+
+            <span id="units">
+              <a href="#" id="celsius">°C</a>/
+              <a href="#" id="fahrenheit">°F </a></span
+            >
+
+            <i class="fas fa-cloud-sun current-weather"></i>
+            <ul>
+              <li id="description">Clouds</li>
+              <li>Humidity: <span id="humid">1</span><span>%</span></li>
+              <li>Wind: <span id="windy">1</span><span>mph</span></li>
+            </ul>
+          </div>
+          <!-- this is the end  -->
+          <!-- future weather starts. This grid had 5 row and columns -->
+
+          <div class="col align-self-center">
+            <div class="row">
+              <div class="col">
+                <span class="day">Sat</span>
+
+                <span class="picture-degrees">
+                  <i class="fas fa-cloud-sun"></i>22'C
+                </span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <span class="day">Sun</span>
+
+                <span class="picture-degrees">
+                  <i class="fas fa-cloud-sun"></i>22'C
+                </span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <span class="day">Mon</span>
+
+                <span class="picture-degrees">
+                  <i class="far fa-sun"></i>24'C
+                </span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <span class="day">Tues</span>
+
+                <span class="picture-degrees">
+                  <i class="far fa-sun"></i>26'C
+                </span>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <span class="day">Wed</span>
+
+                <span class="picture-degrees">
+                  <i class="far fa-sun"></i>26'C
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="Wireframe-js/js-data-type.js"></script>
+  </body>
+</html>
